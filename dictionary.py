@@ -4,11 +4,11 @@ import sys
 
 load_dotenv()
 
-word = input('Enter a word you want to search for: ')
 api_key = os.environ.get('API_KEY')
+print(api_key)
+word = input('Enter a word you want to search for: ')
 
-url = f"https://www.dictionaryapi\
-    .com/api/v3/references/collegiate/json/{word}?key={api_key}"
+url = f"https://www.dictionaryapi.com/api/v3/references/collegiate/json/{word}?key={api_key}"
 
 response = requests.get(url)
 response_status = response.status_code
@@ -36,3 +36,4 @@ elif type(data) is list:
           this dictionary, did you mean any of these ? \n {data}"
 else:
     final_output = f"Word definition doesn't exist in this dictionary"
+print(final_output)

@@ -49,12 +49,12 @@ OR if you want to use my requirements.txt file, run the below command
 
 pip install -r requirements.txt
 
-To run the tests locally on windows (Run the command below in Command Line CLI Terminal), First (set Environment variables)
-set PYTHONPATH=src
+To run the tests locally on windows (Run the command below in Command Line CLI Terminal), First (set Environment variables) <br />
+set PYTHONPATH=src <br />
 pytest
 
-To run the tests locally on mac/linux (Run in Command Line CLI Terminal)
-export PYTHONPATH=src
+To run the tests locally on mac/linux (Run in Command Line CLI Terminal)<br />
+export PYTHONPATH=src <br />
 pytest
 
 
