@@ -30,13 +30,14 @@ def get_word_definition(word):
 
                 final_output = f"{pronunciation} ({part_of_speech}): {meaning}"
             elif type(data) is list:
-                final_output = f"This word definition doesn't exist in this dictionary" 
+                final_output = "This word definition doesn't exist in this dictionary"
             else:
-                final_output = f"This word definition doesn't exist in this dictionary"
+                final_output = "This word definition doesn't exist in this dictionary"
 
         return final_output
     except Exception:
        return "An Exception occured!!" 
+
 
 api_key = os.environ.get('API_KEY')
 
@@ -48,3 +49,4 @@ if __name__ == '__main__':
         word = input('Enter a word you want to search for: ')
     output = get_word_definition(word)
     print(output)
+
