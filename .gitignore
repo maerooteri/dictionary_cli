@@ -1,0 +1,6 @@
+pvenv/
+__pycache__/
+.pyt*
+.env
+*.ipynb
+*.json
