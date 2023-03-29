@@ -57,5 +57,5 @@ To run the tests locally on mac/linux (Run in Command Line CLI Terminal)<br />
 export PYTHONPATH=src <br />
 pytest
 
-
+To run pytest command, make sure you are in the root directory
 

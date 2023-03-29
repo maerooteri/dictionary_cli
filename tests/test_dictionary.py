@@ -2,6 +2,7 @@ import os
 import pytest
 from dictionary import get_word_definition
 
+
 @pytest.mark.parametrize("word", ['hello', 'world', 'python', 'computer', 'definition'])
 def test_output_type(word):
     """Test that get_word_definition() returns a valid string as an output"""
